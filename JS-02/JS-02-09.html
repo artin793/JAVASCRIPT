@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Serie Quiz</title>
+</head>
+<body>
+    <script>
+        let poeng = 0;
+
+        const quiz = [ 
+            { spm: "Hva heter hovedpersonen i The Rookie?", svar: "John Nolan" },
+            { spm: "Hva heter John Nolans nåværende kone i serien?" , svar: "Bailey Nune"},
+            { spm: "Når ble den første sesongen av The Rookie lagt ut? (år altså)", svar: "2018" },
+            { spm: "Hva heter karakteren som er spilt av Nathan Fillion, som begynner som den eldste politirekrutten i LAPD?", svar: "John Nolan" },
+            { spm: "Hvilken sesong dør politibetjent Jackson West, etter å ha blitt skutt i ryggen?", svar: "Sesong 4" }
+        ];
+
+        for (let i = 0; i < quiz.length; i++) {
+            let brukerSvar = prompt(quiz[i].spm);
+            if (brukerSvar.toLowerCase() === quiz[i].svar.toLowerCase()) {
+                poeng++;
+                alert("Riktig!");
+            } else {
+                alert("Feil! Riktig svar er: " + quiz[i].svar);
+            }
+        }
+
+        document.write("Du fikk " + poeng + " av " + quiz.length + " poeng.");
+    </script>
+</body>
+</html>

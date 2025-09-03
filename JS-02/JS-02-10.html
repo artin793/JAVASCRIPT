@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabell med potenser</title>
+</head>
+<body>
+    <table border="1">
+        <tr>
+            <th>Tall</th>
+            <th>Tall i andre potens</th>
+            <th>Tall i tredje potens</th>
+        </tr>
+        <script>
+            for (let i = 0; i <= 1000; i++) {
+                document.write("<tr>");
+                document.write("<td>" + i + "</td>");
+                document.write("<td>" + (i ** 2) + "</td>");
+                document.write("<td>" + (i ** 3) + "</td>");
+                document.write("</tr>");
+            }
+        </script>
+    </table>
+</body>
+</html>

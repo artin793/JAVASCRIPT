@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Min første nettside med JavaScript</title>
+</head>
+<body>
+    <h1>JavaScript metoder</h1>
+    <p>Pass på denne siden inneholder JavaScript</p>
+    <script>
+        alert("Hallo, JavaScript");
+    </script>
+</body>
+</html>
