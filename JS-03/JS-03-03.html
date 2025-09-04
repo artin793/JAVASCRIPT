@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spille tid!</title>
+</head>
+<body>
+    <div id="knapper"></div>
+    <script>
+        const antallknapper=5;
+        const riktigIndex = Math.floor(Math.random() * antallknapper);
+        const container = document.getElementById("knapper");
+
+        for (let i = 0; i < antallknapper; i++) {
+            const knapp = document.createElement("button");
+            knapp.textContent = "Klikk meg!";
+            knapp.addEventListener("click", function() {
+                if (i === riktigIndex) {
+                    alert("Riktig!") 
+                } else {
+                    alert("Feil! Prøv igjen!");
+                }
+            });
+            container.appendChild(knapp);
+        }
+    </script>
+</body>
+</html>

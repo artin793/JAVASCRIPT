@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lang setning</title>
+</head>
+<body>
+    <p>
+        Dette er en veldig lang setning hvor ett av ordene, nemlig
+        <span id="riktigOrd">riktig</span>,
+        vil vise en melding hvis du trykker på det.
+    </p>
+    <script>
+        document.getElementById("riktigOrd").onclick=function() {
+            alert("Du trykket på det riktige ordet, gratulerer!");
+        };
+    </script>
+</body>
+</html>

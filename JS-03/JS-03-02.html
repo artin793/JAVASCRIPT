@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overskrift :) </title>
+    <style>
+        h1 {
+            transition: color 0.4s;
+            cursor: pointer;
+        }
+        h1.hovered {
+            color: darkgrey;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="overskrift">(OVERSKRIFTEN)</h1>
+    <script>
+        const h1 = document.getElementById("overskrift")
+
+        h1.addEventListener("mouseover", function(){
+            h1.classList.add("hovered");
+        });
+
+        h1.addEventListener("mouseout", function() {
+            h1.classList.remove("hovered");
+        });
+
+        h1.addEventListener("click", function() {
+            alert("Hallo :)")
+            alert("Hvordan går det?")
+            alert("Hadde! Ha en fin dag eller kveld videre!");
+        });
+    </script>
+</body>
+</html>

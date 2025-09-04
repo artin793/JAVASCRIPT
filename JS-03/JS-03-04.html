@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+</head>
+<body>
+    <h1>Quiz</h1>
+    <p>Hva het lederen av Yugoslavia?</p>
+    <button onclick="svar(false)">Teti</button>
+    <button onclick="svar(true)">Tito</button>
+    <button onclick="svar(false)">Stalin</button>
+    <button onclick="svar(false)">Hitler</button>
+    <button onclick="svar(false)">Spongebob</button>
+    <script>
+        function svar(riktig) {
+            if (riktig) {
+                alert("Riktig!");
+            } else {
+                alert("Feil! Prøv igjen!");
+            }
+        }
+    </script>
+</body>
+</html>

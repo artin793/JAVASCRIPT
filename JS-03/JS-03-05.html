@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Penere Quiz</title>
+    <style>
+        ol { 
+            padding-left: 20px;
+        }
+        li { 
+            cursor: pointer;
+            margin-bottom: 8px;
+            transition: background 0,2s;
+        }
+        li:hover {
+            background: darkgrey
+        }
+    </style>
+</head>
+<body>
+    <h1>Quiz</h1>
+    <p>Hva het lederen av Yugoslavia?</p>
+    <ol>
+         <li onclick="svar(false)">Teti</li>
+         <li onclick="svar(true)">Tito</li>
+         <li onclick="svar(false)">Stalin</li>
+         <li onclick="svar(false)">Hitler</li>
+         <li onclick="svar(false)">Spongebob</li>
+    </ol>
+    <script>
+        function svar(riktig) {
+            if (riktig) {
+                alert("RIKTIG!");
+            } else {
+                alert("FEIL! Prøv igjen!");
+            }
+        }
+    </script>
+</body>
+</html>
